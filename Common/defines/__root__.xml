@@ -1,0 +1,18 @@
+<root>
+	<topmodule name="spec"/>
+
+	<patch name="zh_cn"/>
+	<patch name="zh_tw"/>
+	<patch name="en"/>
+
+	<import name="."/>
+	<importexcel name="__tables__.xlsx" type="table"/>相对data目录
+	<importexcel name="__enums__.xlsx" type="enum"/>相对data目录
+	<importexcel name="__beans__.xlsx" type="bean"/>相对data目录
+
+	<group name="client" default="1"/> client
+	<group name="server" default="1"/> server
+
+	<service name="server" manager="Common" group="server"/>
+	<service name="client" manager="Common" group="client"/>
+</root>
