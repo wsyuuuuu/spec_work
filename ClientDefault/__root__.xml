@@ -1,8 +1,8 @@
 <root>
 	<topmodule name="spec"/>
 
-	<patch name="zh_cn"/>
-	<patch name="zh_tw"/>
+	<patch name="zh-cn"/>
+	<patch name="zh-tw"/>
 	<patch name="en"/>
 
 	<import name="."/>
