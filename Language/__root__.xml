@@ -10,5 +10,5 @@
 
 	<group name="client" default="1"/> client
 
-	<service name="client" manager="Default" group="client"/>
+	<service name="client" manager="SpecText" group="client"/>
 </root>

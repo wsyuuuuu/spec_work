@@ -13,6 +13,6 @@
 	<group name="client" default="1"/> client
 	<group name="server" default="1"/> server
 
-	<service name="server" manager="Common" group="server"/>
-	<service name="client" manager="Common" group="client"/>
+	<service name="server" manager="SpecCommon" group="server"/>
+	<service name="client" manager="SpecCommon" group="client"/>
 </root>

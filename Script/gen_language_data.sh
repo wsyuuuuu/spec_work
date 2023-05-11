@@ -3,8 +3,8 @@
 SCRIPT_PATH="$(dirname "$0")"
 
 GEN_CLIENT=${SCRIPT_PATH}/../Luban.ClientServer/Luban.ClientServer.dll
-DEFINE_FILE=${SCRIPT_PATH}/../ClientDefault/__root__.xml
-INPUT_DATA_PATH=${SCRIPT_PATH}/../ClientDefault
+DEFINE_FILE=${SCRIPT_PATH}/../Language/__root__.xml
+INPUT_DATA_PATH=${SCRIPT_PATH}/../Language
 LANGUAGE_FILE=${SCRIPT_PATH}/../Language/language.xlsx
 OUTPUT=${SCRIPT_PATH}/../Output/ClientDefaultData
 
@@ -32,6 +32,7 @@ dotnet ${GEN_CLIENT} -j cfg --\
 
 
 mv ${SCRIPT_PATH}/../Temp/common_defaulttext.bytes ${OUTPUT}/default_${LANGUAGE}_text.bytes
+mv ${SCRIPT_PATH}/../Temp/common_globaltext.bytes ${OUTPUT}/../Editor\ Default\ Resources/global_${LANGUAGE}_text.bytes
 
 done
 
