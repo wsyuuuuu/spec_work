@@ -1,10 +1,6 @@
 <root>
 	<topmodule name="spec"/>
 
-	<patch name="zh-cn"/>
-	<patch name="zh-tw"/>
-	<patch name="en"/>
-
 	<import name="."/>
 	<importexcel name="__tables__.xlsx" type="table"/>相对data目录
 	<importexcel name="__enums__.xlsx" type="enum"/>相对data目录

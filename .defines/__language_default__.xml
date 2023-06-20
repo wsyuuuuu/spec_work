@@ -1,0 +1,8 @@
+<root>
+	<topmodule name="spec"/>
+
+	<import name="./../Language/__default__.xml"/>
+
+	<group name="client" default="1"/> client
+	<service name="client" manager="SpecDefaultText" group="client"/>
+</root>

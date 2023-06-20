@@ -1,3 +1,10 @@
 *.DS_Store
 ~$*
 *~
+
+.cache.meta
+Output
+Output.Client
+Output.Server
+NotLocalized/*
+!NotLocalized/README.md
