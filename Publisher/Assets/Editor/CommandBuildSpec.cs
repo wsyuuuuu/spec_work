@@ -91,6 +91,7 @@ public class CommandBuildSpec
             CompressOption = ECompressOption.LZ4,
             OutputNameStyle = EOutputNameStyle.HashName,
             CopyBuildinFileOption = ECopyBuildinFileOption.None,
+            StreamingAssetsRoot = "Builtin",
 
             SBPParameters = new BuildParameters.SBPBuildParameters
             {
