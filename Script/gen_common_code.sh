@@ -20,4 +20,4 @@ dotnet ${LUBAN_CLIENT_SERVER_DLL} -j cfg --\
  -s client \
  --gen_types code_cs_unity_bin \
  --input_data_dir ${INPUT_DATA_DIR} \
- --output_code_dir ${CLIENT_SPEC_CODE_OUTPUT} \
+ --output_code_dir ${CLIENT_SPEC_CODE_OUTPUT}/Common \

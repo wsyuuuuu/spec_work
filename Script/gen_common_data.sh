@@ -29,7 +29,7 @@ for LANGUAGE in ${LANGUAGE_CODES[*]}; do
    -s client \
    --gen_types data_bin \
    --input_data_dir ${INPUT_DATA_DIR} \
-   --output_data_dir ${CLIENT_SPEC_DATA_OUTPUT}/${LANGUAGE} \
+   --output_data_dir ${CLIENT_SPEC_DATA_OUTPUT}/Common/${LANGUAGE} \
    --output:exclude_tags skip \
    --l10n:input_text_files ${INPUT_TEXT_FILE} \
    --l10n:text_field_name ${LANGUAGE} \

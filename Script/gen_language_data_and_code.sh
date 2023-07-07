@@ -16,7 +16,7 @@ for LANGUAGE in ${LANGUAGE_CODES[*]}; do
    -d ${DEFINE_FILE_DEFAULT} \
    -s client \
    --input_data_dir ${INPUT_DATA_DIR} \
-   --output_data_dir ${CLIENT_TEXT_DATA_OUTPUT}/Default/${LANGUAGE} \
+   --output_data_dir ${CLIENT_SPEC_DATA_OUTPUT}/DefaultText/${LANGUAGE} \
    --gen_types data_bin \
    --l10n:input_text_files ${INPUT_TEXT_FILE} \
    --l10n:text_field_name ${LANGUAGE} \
@@ -28,7 +28,7 @@ for LANGUAGE in ${LANGUAGE_CODES[*]}; do
    -d ${DEFINE_FILE_GLOBAL} \
    -s client \
    --input_data_dir ${INPUT_DATA_DIR} \
-   --output_data_dir ${CLIENT_TEXT_DATA_OUTPUT}/Global/${LANGUAGE} \
+   --output_data_dir ${CLIENT_SPEC_DATA_OUTPUT}/GlobalText/${LANGUAGE} \
    --gen_types data_bin \
    --l10n:input_text_files ${INPUT_TEXT_FILE} \
    --l10n:text_field_name ${LANGUAGE} \
@@ -42,7 +42,7 @@ dotnet ${LUBAN_CLIENT_SERVER_DLL} -t ${TEMPLATE_SEARCH_PATH} -j cfg --\
  -d ${DEFINE_FILE_DEFAULT} \
  -s client \
  --input_data_dir ${INPUT_DATA_DIR} \
- --output_code_dir ${CLIENT_TEXT_CODE_OUTPUT}/Default \
+ --output_code_dir ${CLIENT_SPEC_CODE_OUTPUT}/DefaultText \
  --gen_types code_cs_unity_bin \
 
 
@@ -51,6 +51,6 @@ dotnet ${LUBAN_CLIENT_SERVER_DLL} -t ${TEMPLATE_SEARCH_PATH} -j cfg --\
  -d ${DEFINE_FILE_GLOBAL} \
  -s client \
  --input_data_dir ${INPUT_DATA_DIR} \
- --output_code_dir ${CLIENT_TEXT_CODE_OUTPUT}/Global \
+ --output_code_dir ${CLIENT_SPEC_CODE_OUTPUT}/GlobalText \
  --gen_types code_cs_unity_bin \
 
