@@ -76,12 +76,6 @@ public class CommandBuildSpec
     private static string BuildSpec(string outputRoot, int specVersion)
     {
         Debug.Log("================▶️ 构建配置包================");
-        string outputPath = $"{outputRoot}/{kPackageName}/{specVersion}";
-        if (Directory.Exists(outputPath))
-        {
-            Debug.LogFormat("检查到已存在Bundle对应目标到输出路径，删除输出路径={0}", outputPath);
-            Directory.Delete(outputPath, true);
-        }
 
         BuildParameters buildParameters = new BuildParameters
         {
@@ -113,7 +107,7 @@ public class CommandBuildSpec
         }
 
         Debug.Log("================✅ 构建配置包================");
-        return outputPath;
+        return buildResult.OutputPackageDirectory;
     }
 
     private static void UploadSpec(string outputPath, int specVersion)

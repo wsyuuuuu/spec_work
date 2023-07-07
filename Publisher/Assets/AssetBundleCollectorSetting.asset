@@ -33,7 +33,7 @@ MonoBehaviour:
         AddressRuleName: AddressByFileName
         PackRuleName: PackRawFile
         FilterRuleName: CollectAll
-        AssetTags: 
+        AssetTags: en
         UserData: 
       - CollectPath: Assets/Specs/zh-cn
         CollectorGUID: f50a1140883444c62b17efd93fd5606b
@@ -41,5 +41,5 @@ MonoBehaviour:
         AddressRuleName: AddressByFileName
         PackRuleName: PackRawFile
         FilterRuleName: CollectAll
-        AssetTags: 
+        AssetTags: zh-cn
         UserData: 
